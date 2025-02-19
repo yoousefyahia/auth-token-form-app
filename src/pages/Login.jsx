@@ -29,8 +29,12 @@ function Login() {
   return (
     <div className="container mt-5">
       <h2 className="text-center">تسجيل الدخول</h2>
-      <form onSubmit={handleSubmit} className="w-50 mx-auto border p-4 rounded">
-        <div className="mb-3">
+      <form 
+        onSubmit={handleSubmit} 
+        className="mx-auto border p-4 rounded shadow bg-light"
+        style={{ maxWidth: "500px" }}
+      >
+        <div className="mb-3 text-end">
           <label className="form-label">البريد الإلكتروني</label>
           <input 
             type="email" 
@@ -40,7 +44,7 @@ function Login() {
             required 
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-3 text-end">
           <label className="form-label">كلمة المرور</label>
           <input 
             type="password" 
@@ -54,6 +58,7 @@ function Login() {
       </form>
     </div>
   );
+  
 }
 
 export default Login;

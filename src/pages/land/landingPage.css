@@ -21,29 +21,46 @@
     padding: 20px;
   }
   
-  form .form-control {
-    border: 2px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  form .btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-  }
   .custom-form {
-    width: 40%; 
+    width: 90%; 
+    max-width: 500px; 
     margin: 50px auto; 
     padding: 20px; 
     border: 1px solid #007bff; 
     border-radius: 10px; 
     background-color: #f8f9fa; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    direction: rtl; /* يجعل النصوص متوافقة مع العربية */
   }
-  .row img {
-    width: 100%; 
-    height: 300px; 
-    object-fit: cover; 
+  
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .ph-edit {
+    width: 100%;
+    height: 300px ;
+    object-fit: cover;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .custom-form {
+      width: 50%; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-form {
+      width: 40%; 
+    }
   }
   

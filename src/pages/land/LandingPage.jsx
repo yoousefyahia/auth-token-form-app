@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CutNavbar from "../../components/Nav"
-import "./LandingPage.css";
+import "./LandingPage";
 
 function LandingPage() {
   const formRef = useRef(null);

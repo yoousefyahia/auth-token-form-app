@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
-function CustomNavbar({ scrollToForm }) {
+function CutNavbar({ scrollToForm }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -38,4 +38,4 @@ function CustomNavbar({ scrollToForm }) {
   );
 }
 
-export default CustomNavbar;
+export default CutNavbar;

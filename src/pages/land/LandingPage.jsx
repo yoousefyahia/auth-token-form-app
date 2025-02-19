@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import CustomNavbar from "../../components/Navbar";
+import CutNavbar from "../../components/Nav"
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -47,7 +47,7 @@ function LandingPage() {
 
   return (
     <>
-      <CustomNavbar scrollToForm={scrollToForm} />
+      <CutNavbar scrollToForm={scrollToForm} />
       
       <div className="container text-center mt-5">
         <h1>مرحبًا بك في نادي القرن</h1>

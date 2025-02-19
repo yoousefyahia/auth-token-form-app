@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CutNavbar from "../../components/Nav"
-import "./LandingPage";
+import "./LandingPage.css";
 
 function LandingPage() {
   const formRef = useRef(null);
@@ -69,7 +69,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <form ref={formRef} id="contact-form" onSubmit={handleSubmit} className="custom-form">
+        <form ref={formRef}  onSubmit={handleSubmit} className="custom-form">
           <div className="mb-3">
             <label className="form-label">الاسم</label>
             <input
